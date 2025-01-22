@@ -6,3 +6,8 @@ def description():
 # none
 def none():
   return 'none'
+
+
+# nothing
+def nothing():
+  return 'nothing'
