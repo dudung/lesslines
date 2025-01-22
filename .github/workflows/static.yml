@@ -1,8 +1,8 @@
-# Simple workflow for deploying static content to GitHub Pages
+# Workflow for deploying content from 'docs' folder with README.md as the entry page
 name: Deploy docs to Pages
 
 on:
-  # Trigger the workflow on pushes that modify files in the 'docs' folder
+  # Trigger the workflow on pushes that modify files in the 'docs' folder or its .md files
   push:
     paths:
       - 'docs/**'
@@ -16,14 +16,13 @@ permissions:
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+# Allow only one concurrent deployment
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
 jobs:
-  # Single deploy job since we're just deploying
+  # Single deploy job
   deploy:
     environment:
       name: github-pages
@@ -32,13 +31,46 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      
       - name: Setup Pages
         uses: actions/configure-pages@v5
+
+      - name: Convert all Markdown to HTML
+        run: |
+          # Ensure docs folder exists
+          if [ ! -d "docs" ]; then
+            echo "Error: docs folder not found!"
+            exit 1
+          fi
+          
+          # Convert README.md explicitly to index.html
+          if [ -f "docs/README.md" ]; then
+            pandoc docs/README.md -o docs/index.html --standalone --toc --self-contained --mathjax
+            # Ensure relative links between .md files are preserved (for README)
+            sed -i 's/\.md/.html/g' docs/index.html
+          else
+            echo "Error: docs/README.md not found!"
+            exit 1
+          fi
+
+          # Convert all .md files in docs to .html
+          find docs -name "*.md" -type f | while read -r file; do
+            # Define output file path
+            output="${file%.md}.html"
+            
+            # Convert each .md file to .html while preserving links
+            pandoc "$file" -o "$output" --standalone --toc --self-contained --mathjax
+
+            # Ensure relative links between .md files are preserved
+            sed -i 's/\.md/.html/g' "$output"  # Convert .md links to .html links
+          done
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload only the 'docs' folder
+          # Upload the 'docs' folder, now containing .html files
           path: 'docs'
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
