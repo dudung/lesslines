@@ -4,3 +4,4 @@ The purpose of lesslines is to reduce the complexity of computational tools for 
 + Installation
 + Examples
 + Issues
++ Miscellaneous
