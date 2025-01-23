@@ -39,7 +39,12 @@ jobs:
 
       - name: Clean up old build artifacts
         run: |
+          git clean -fdx  # Clean the repository
           rm -rf dist/ build/ *.egg-info
+
+      - name: Debug build version
+        run: |
+          python setup.py --version  # Print the version to confirm it's correct
 
       - name: Build release distributions
         run: |
