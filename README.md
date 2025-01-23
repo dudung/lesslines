@@ -12,7 +12,7 @@ pip install lesslines
 or from GitHub
 
 ```
-pip install pip@git+https://github.com/dudung/lesslines
+pip install lesslines@git+https://github.com/dudung/lesslines
 ```
 
 for unreleased version.
