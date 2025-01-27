@@ -2,23 +2,21 @@
 explore python with less lines of code
 
 
-## features
+### features
 - Wrapper functions for popular numerical libraries.
 - Simplified interfaces for common operations.
 - Ready-to-use tools for data visualization.
 
 
-## installation
-From PyPI
+### Quick Start
+Install lesslines via pip:
 
-```
+```bash
 pip install lesslines
 ```
 
-or from GitHub
+Explore the [documentation](docs/index.md) to get started!
 
-```
-pip install lesslines@git+https://github.com/dudung/lesslines
-```
 
-for unreleased version.
+### License
+MIT License
