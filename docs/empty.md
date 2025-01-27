@@ -9,3 +9,5 @@ Forget `site_dir: site` in the `mkdocs.yml`. Try to add this line. Not work.
 Change to `actions/checkout@v3`, `actions/setup-python@v4`, `publish_dir: site`
 
 None work.
+
+Build process ok. Now debug for deploy process.
