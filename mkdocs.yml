@@ -1,0 +1,26 @@
+site_name: lesslines
+site_description: A Python package to simplify numerical methods.
+site_author: Your Name
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - content.tabs
+  palette:
+    scheme: light
+    primary: indigo
+    accent: pink
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Installation: installation.md
+      - Usage: usage.md
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          selection:
+            docstring_style: google

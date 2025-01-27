@@ -2,7 +2,13 @@
 explore python with less lines of code
 
 
-## install
+## features
+- Wrapper functions for popular numerical libraries.
+- Simplified interfaces for common operations.
+- Ready-to-use tools for data visualization.
+
+
+## installation
 From PyPI
 
 ```
