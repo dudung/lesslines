@@ -32,4 +32,8 @@ setup(
         'Operating System :: OS Independent',
     ],
     python_requires='>=3.12',
+    project_urls={
+        "Repository": "https://github.com/dudung/lesslines",  # Repository URL
+        "Documentation": "https://dudung.github.io/lesslines/docs/",    # Optional additional link
+    },
 )
