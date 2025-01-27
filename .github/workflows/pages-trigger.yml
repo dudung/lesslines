@@ -1,0 +1,15 @@
+name: Trigger Pages Build Deployment
+
+on:
+  workflow_run:
+    workflows: ["Deploy MkDocs Documentation"]
+    types:
+      - completed
+
+jobs:
+  trigger-pages-deployment:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger pages build
+        run: |
+          echo "Triggering pages-build-deployment to update site from gh-pages."
