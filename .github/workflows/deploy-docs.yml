@@ -29,7 +29,7 @@ jobs:
         run: mkdocs build --strict --verbose
 
       - name: List built site files
-        run: ls -R site
+        run: ls -R ./site
 
   deploy:
     runs-on: ubuntu-latest
