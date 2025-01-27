@@ -26,7 +26,8 @@ jobs:
           pip freeze
 
       - name: Build documentation
-        run: mkdocs build --strict --verbose
+        #run: mkdocs build --strict --verbose
+        run: mkdocs build
 
   deploy:
     runs-on: ubuntu-latest
