@@ -13,3 +13,5 @@ None work.
 Build process ok. Now debug for deploy process.
 
 Try `ls -R ./site` after build.
+
+Try to save artifact.
