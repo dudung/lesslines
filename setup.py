@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='lesslines',
-    version='0.0.2',
+    version='0.0.3',
     packages=find_packages(where='src'),
     package_dir={'': 'src'},
     install_requires=[
@@ -19,7 +19,7 @@ setup(
             # If you have any console scripts, specify them here
         ],
     },
-    url='https://github.com/dudung/lesslines',
+    url='https://dudung.github.io/lesslines/',
     license='MIT',
     author='Sparisoma Viridi',
     author_email='dudung@gmail.com',

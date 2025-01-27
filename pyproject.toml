@@ -1,6 +1,6 @@
 [tool.poetry]  # This section is for Poetry (optional, if using Poetry)
 name = "lesslines"
-version = "0.0.2"
+version = "0.0.3"
 description = "explore python with less lines of code"
 authors = ["Sparisoma Viridi <dudung@gmail.com>"]
 license = "MIT"
