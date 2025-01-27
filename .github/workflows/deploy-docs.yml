@@ -3,9 +3,9 @@ name: Deploy MkDocs Documentation
 on:
   push:
     branches:
-      - main  # or the branch where you make changes
+      - main
     paths:
-      - 'docs/**'  # Only trigger on changes to docs
+      - 'docs/**'
 
 jobs:
   build:
@@ -22,12 +22,11 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install mkdocs
-          pip install mkdocs-material
-          pip install mkdocstrings[python]
+          pip install mkdocs mkdocs-material mkdocstrings[python]
+          pip freeze
 
       - name: Build documentation
-        run: mkdocs build --strict
+        run: mkdocs build --strict --verbose
 
   deploy:
     runs-on: ubuntu-latest
