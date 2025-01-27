@@ -1,6 +1,7 @@
 site_name: lesslines
 site_description: A Python package to simplify numerical methods.
-site_author: Your Name
+site_author: Sparisoma Viridi
+site_dir: site
 theme:
   name: material
   features:
