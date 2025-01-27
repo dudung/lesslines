@@ -16,6 +16,8 @@ nav:
   - Getting Started:
       - Installation: installation.md
       - Usage: usage.md
+  - Not Important:
+      - Empty: empty.md
 
 plugins:
   - search
