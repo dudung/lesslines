@@ -11,3 +11,5 @@ Change to `actions/checkout@v3`, `actions/setup-python@v4`, `publish_dir: site`
 None work.
 
 Build process ok. Now debug for deploy process.
+
+Try `ls -R ./site` after build.
