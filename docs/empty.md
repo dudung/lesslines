@@ -15,3 +15,5 @@ Build process ok. Now debug for deploy process.
 Try `ls -R ./site` after build.
 
 Try to save artifact.
+
+Add `path: ./site  # Explicitly extract the artifact to ./site`.
