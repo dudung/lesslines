@@ -48,6 +48,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: site
+          path: ./site  # Explicitly extract the artifact to ./site
 
       - name: Verify built site files before deploy
         run: ls -R ./site
