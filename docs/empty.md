@@ -17,3 +17,5 @@ Try `ls -R ./site` after build.
 Try to save artifact.
 
 Add `path: ./site  # Explicitly extract the artifact to ./site`.
+
+Simplify workflow.
