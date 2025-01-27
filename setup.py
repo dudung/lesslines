@@ -19,7 +19,7 @@ setup(
             # If you have any console scripts, specify them here
         ],
     },
-    url='https://dudung.github.io/lesslines/',
+    url='https://github.com/dudung/lesslines',
     license='MIT',
     author='Sparisoma Viridi',
     author_email='dudung@gmail.com',
@@ -33,7 +33,7 @@ setup(
     ],
     python_requires='>=3.12',
     project_urls={
-        "Repository": "https://github.com/dudung/lesslines",  # Repository URL
-        "Documentation": "https://dudung.github.io/lesslines/docs/",    # Optional additional link
+        #"Repository": "https://github.com/dudung/lesslines",  # Repository URL
+        "Documentation": "https://dudung.github.io/lesslines/",    # Optional additional link
     },
 )
