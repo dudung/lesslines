@@ -40,5 +40,6 @@ jobs:
         with:
           github_token: ${{ secrets.MKDOCS_GH_PAGES }}
           publish_dir: ./site
+          publish_branch: my-test-branch
           commit_message: 'Deploy MkDocs site'
           force_orphan: true
