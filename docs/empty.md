@@ -19,3 +19,5 @@ Try to save artifact.
 Add `path: ./site  # Explicitly extract the artifact to ./site`.
 
 Simplify workflow.
+
+Forget MKDOCS_GH_PAGES_2.
