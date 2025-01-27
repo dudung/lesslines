@@ -1,6 +1,7 @@
 site_name: lesslines
-site_description: A Python package to simplify numerical methods.
+site_description: explore python with less lines of code
 site_author: Sparisoma Viridi
+docs_dir: docs
 site_dir: site
 theme:
   name: material
@@ -12,6 +13,8 @@ theme:
     scheme: light
     primary: indigo
     accent: pink
+  footer:
+    copyright: "© 2025 Sparisoma Viridi"
 
 nav:
   - Home: index.md
