@@ -13,8 +13,18 @@ theme:
     scheme: light
     primary: indigo
     accent: pink
-  footer:
-    copyright: "© 2025 Sparisoma Viridi"
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/dudung
+      name: GitHub
+    - icon: fontawesome/brands/medium
+      link: https://medium.com/@6unpnp
+      name: Medium
+    - icon: fontawesome/brands/x-twitter
+      link: https://x.com/6unpnp
+      name: X (formerly Twitter)
 
 nav:
   - Home: index.md
