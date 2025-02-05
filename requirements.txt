@@ -36,6 +36,7 @@ future==1.0.0
 gast==0.6.0
 ghp-import==2.1.0
 google-pasta==0.2.0
+graphviz==0.20.3
 griffe==1.5.6
 grpcio==1.70.0
 h11==0.14.0
@@ -72,6 +73,7 @@ jupyterlab_pygments==0.3.0
 jupyterlab_server==2.27.3
 jupyterlab_widgets==3.0.13
 keras==3.8.0
+keras-visualizer==3.2.0
 keyring==25.6.0
 kiwisolver==1.4.8
 libclang==18.1.1
