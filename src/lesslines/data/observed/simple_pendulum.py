@@ -28,6 +28,10 @@
             "values": [37.95, 38.26, 38.70, 39.15, 39.91],
             "unit": "s",
             "number_of_cycles": 20
+        },
+        "cord_length": {
+            "value": 1,
+            "unit": "m"
         }
     }
 }
@@ -53,6 +57,11 @@ _d01 =
             "unit": "s",
             "number_of_cycles": 100
         },
+        "angle": {
+            "value": 3.0,
+            "unit": "degree",
+            "uncertainty": 0.3
+        },
         "cord_length": {
             "value": 3.0044,
             "unit": "m",
@@ -71,8 +80,118 @@ _d01 =
     }
 }
 
+_d02 =
+{
+    "source": {
+        "authors": [
+            "Masringgit Marwiyah Nst"
+        ],
+        "title": "Calculation of Gravitational Acceleration Using the Method of Objects Oscillating at the End of a Spring and Swinging a Pendulum",
+        "journal": "Asian Journal of Science Education",
+        "volume": "6",
+        "number": "2",
+        "pages": "95-101",
+        "month": "Oktober",
+        "year": 2024,
+        "url": "http://doi.org/10.24815/ajse.v6i2.40578"
+    },
+    "data": {
+        "total_time_1": {
+            "values": [8.62, 8.91, 8.87, 8.54, 8.64, 8.95, 8.45, 8.76, 8.75, 8.69],
+            "unit": "s",
+            "number_of_cycles": 10
+        },
+        "total_time_2": {
+            "values": [11.63, 11.25, 11.33, 11.27, 11.10, 11.60, 11.13, 11.08, 11.02, 11.20],
+            "unit": "s",
+            "number_of_cycles": 10
+        },
+        "cord_length_1": {
+            "value": 0.2,
+            "unit": "m"
+        },
+        "cord_length_2": {
+            "value": 0.3,
+            "unit": "m"
+        },
+        "angle": {
+            "value": 10,
+            "unit": "degree",
+            "note": "max value"
+        }
+    }
+}
+
+_d03 =
+{
+    "source": {
+        "authors": [
+            "Rahmat Hidayat", "Akmam Akmam", "Eka Susanti", "Annisa Febriani"
+        ],
+        "title": "A more convenient method to predict gravitational acceleration (g) using smartphone's proximity sensor in a simple pendulum experiment",
+        "journal": "Physics Education",
+        "volume": "58",
+        "number": "4",
+        "pages": "045005",
+        "month": "July",
+        "year": 2023,
+        "url": "http://doi.org/10.1088/1361-6552/acd533"
+    },
+    "data": {
+        "period": {
+            "values": [2.27, 2.33, 2.44, 2.50, 2.58, 2.64, 2.72],
+            "unit": "s"
+        },
+        "cord_length": {
+            "values": [1.27, 1.33, 1.47, 1.54, 1.65, 1.72, 1.83],
+            "unit": "m"
+        },
+        "bob_diameter": {
+            "value": 6,
+            "unit": "cm"
+        },
+        "angle": {
+            "value": 10,
+            "unit": "degree",
+            "note": "max value"
+        }
+    }
+}
+
+_d04 =
+{
+    "source": {
+        "authors": [
+            "Unofre Pili", "Renante Violanda"
+        ],
+        "title": "Measurement of the gravitational acceleration using a simple pendulum apparatus, ultrasonic sensor, and Arduino",
+        "journal": "Physics Education",
+        "volume": "54",
+        "number": "4",
+        "pages": "043009",
+        "month": "July",
+        "year": 2019,
+        "url": "http://doi.org/10.1088/1361-6552/ab2011"
+    },
+    "data": {
+        "period": {
+            "values": [1.67, 1.78, 1.87, 1.95, 2.02, 2.10, 2.17],
+            "unit": "s"
+        },
+        "cord_length": {
+            "values": [0.70, 0.79, 0.87, 0.95, 1.02, 1.10, 1.17],
+            "unit": "m"
+        },
+        "sound_reflector_diameter": {
+            "value": 3.0,
+            "unit": "cm",
+            "note": "about twice bob diameter"
+        }
+    }
+}
+
 # Expose only 'data' publicly
-data = [_d00, _d01]
+data = [_d00, _d01, _d02, _d03, _d04]
 
 # Limit module exports
 __all__ = ["data"]
