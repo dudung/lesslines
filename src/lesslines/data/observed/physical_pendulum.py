@@ -1,4 +1,59 @@
-data = [d00, d01, d02]
+data = [d00, d01, d02, d03, d04]
+
+d04 =
+{
+   "source": {
+        "authors": [
+            "Mária Kladivová", "L'ubomír Mucha"
+        ],
+        "title": "Physical pendulum—a simple experiment can give comprehensive information about a rigid body",
+        "journal": "European Journal of Physics",
+        "volume": "35",
+        "number": "2",
+        "pages": "025018",
+        "month": "March",
+        "year": 2014,
+        "url": "http://doi.org/10.1088/0143-0807/35/2/0255018"
+    },
+    "data": {
+        "pivot_position": {
+            "values": [0.01, 0.08, 0.10, 0.12, 0.14, 0.15, 0.16, 0.17, 0.18, 0.19, 0.20, 0.21, 0.23, 0.25, 0.46, 0.48, 0.50, 0.51, 0.52, 0.53, 0.54, 0.55, 0.56, 0.57, 0.59],
+            "unit": "m"
+        },
+        "period": {
+            "values": [1.338, 1.265, 1.248, 1.235, 1.223, 1.218, 1.220, 1.214, 1.216, 1.215, 1.224, 1.226, 1.272, 1.309, 1.324, 1.257, 1.234, 1.236, 1.221, 1.221, 1.215, 1.218, 1.219, 1.224, 1.231],
+            "unit": "s"
+        }
+    }
+}
+
+d03 =
+{
+    "source": {
+        "authors": [
+            "T. H. Richardson", "S. A. Brittle"
+        ],
+        "title": "Physical pendulum experiments to enhance the understanding of moments of inertia and simple harmonic motion",
+        "journal": "Physics Education",
+        "volume": "47",
+        "number": "5",
+        "pages": "537-544",
+        "month": "September",
+        "year": 2012,
+        "url": "http://dx.doi.org/10.1088/0031-9120/47/5/537"
+    },
+    "data": {
+        "pendulum": {
+            "shapes": ["tennis ball", "hoop", "disc", "beam"],
+            "unit": ""
+        },
+        "total_time": {
+            "values": [52.88, 52.63, 45.78, 43.20],
+            "unit": "s",
+            "number_of_cycles": 30
+        }
+    }
+}
 
 d02 =
 {
