@@ -1,4 +1,81 @@
-data_00 =
+data = [d00, d01, d02]
+
+d02 =
+{
+    "source": {
+        "authors": [
+            "Sardjito", "Nani Yuningsih"
+        ],
+        "title": "The Period of Physical Pendulum Motion with Large Angular Displacement",
+        "journal": "Advances in Engineering Research",
+        "volume": "198",
+        "number": "",
+        "pages": "197-201",
+        "month": "December",
+        "year": 2020,
+        "url": "https://doi.org/10.2991/aer.k.201221.034"
+    },
+    "data": {
+        "swinging_angle": {
+            "values": [5, 10, 15, 20, 25, 30, 35, 40, 45],
+            "unit": "degree"
+        },
+        "period": {
+            "values": [1.148, 1.149, 1.150, 1.152, 1.153, 1.160, 1.166, 1.175, 1.179],
+            "unit": "degree"
+        }
+    }
+}
+
+d01 =
+{
+    "source": {
+        "authors": [
+            "Mustafa Coramik", "Buket İnanç"
+        ],
+        "title": "A physical pendulum experiment with Lego, Phyphox and Tracker",
+        "journal": "Physics Education",
+        "volume": "58",
+        "number": "5",
+        "pages": "055014",
+        "month": "July",
+        "year": 2023,
+        "url": "http://dx.doi.org/10.1088/1361-6552/ace57d"
+    },
+    "data": {
+        "total_length": {
+            "values": [48.00, 52.80, 57.60, 62.40, 67.20],
+            "unit": "cm"
+        },
+        "angle": {
+            "values": [13.8, 15.5, 12.8, 9.4, 9.5],
+            "unit": "degree"
+        },
+        "number_of_brick": {
+            "values": [50, 55, 60, 65, 70],
+            "unit": ""
+        },
+        "repetion": {
+            "values": [5, 5, 5, 5, 5],
+            "unit": ""
+        },
+        "period_tracker": {
+            "values": [1.139, 1.199, 1.249, 1.300, 1.349],
+            "unit": "s"
+        },
+        "period_phyphox": {
+            "values": [1.140, 1.199, 1.258, 1.300, 1.340],
+            "unit": "s"
+        }
+    },
+    "others": {
+        "smartphone": {
+            "fps": 60
+        }
+    }
+}
+
+d00 =
 {
     "source": {
         "authors": [
@@ -43,54 +120,6 @@ data_00 =
                 "duration": 50,
                 "unit": "oscillation"
             }
-        }
-    }
-}
-
-data_01 =
-{
-    "source": {
-        "authors": [
-            "Mustafa Coramik", "Buket İnanç"
-        ],
-        "title": "A physical pendulum experiment with Lego, Phyphox and Tracker",
-        "journal": "Physics Education",
-        "volume": "58",
-        "number": "5",
-        "pages": "055014",
-        "month": "July",
-        "year": 2023,
-        "url": "http://dx.doi.org/10.1088/1361-6552/ace57d"
-    },
-    "data": {
-        "total_length": {
-            "values": [48.00, 52.80, 57.60, 62.40, 67.20],
-            "unit": "cm"
-        },
-        "angle": {
-            "values": [13.8, 15.5, 12.8, 9.4, 9.5],
-            "unit": "degree"
-        },
-        "number_of_brick": {
-            "values": [50, 55, 60, 65, 70],
-            "unit": ""
-        },
-        "repetion": {
-            "values": [5, 5, 5, 5, 5],
-            "unit": ""
-        },
-        "period_tracker": {
-            "values": [1.139, 1.199, 1.249, 1.300, 1.349],
-            "unit": "s"
-        },
-        "period_phyphox": {
-            "values": [1.140, 1.199, 1.258, 1.300, 1.340],
-            "unit": "s"
-        }
-    },
-    "others": {
-        "smartphone": {
-            "fps": 60
         }
     }
 }
