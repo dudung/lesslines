@@ -1,45 +1,5 @@
-data = [d00, d01]
-
-d01 =
-{
-    "source": {
-        "authors": [
-            "Robert A. Nelson", "M. G. Olsson"
-        ],
-        "title": "The pendulum—Rich physics from a simple system",
-        "journal": "American Journal of Physics",
-        "volume": "54",
-        "number": "2",
-        "pages": "112-121",
-        "month": "February",
-        "year": 1986,
-        "url": "https://doi.org/10.1119/1.14703"
-    },
-    "data": {
-       "total_time": {
-            "values": [347.84, 347.87, 347.86, 347.91, 347.91, 347.94, 347.84, 347.81, 347.84, 347.98],
-            "unit": "s",
-            "number_of_cycles": 100
-        },
-        "cord_length": {
-            "value": 3.0044,
-            "unit": "m"
-            "uncertainty": 0.0003
-        },
-        "ball_diameter": {
-            "value": 6.10,
-            "unit": "cm",
-            "uncertainty": 0.01
-        },
-        "ball_mass": {
-            "value": 856.7,
-            "unit": "g",
-            "uncertainty": 0.1
-        }
-    }
-}
-
-d00 =
+# Private objects (not accessible on import)
+ _d00 =
 {
     "source": {
         "authors": [
@@ -71,3 +31,48 @@ d00 =
         }
     }
 }
+
+_d01 =
+{
+    "source": {
+        "authors": [
+            "Robert A. Nelson", "M. G. Olsson"
+        ],
+        "title": "The pendulum—Rich physics from a simple system",
+        "journal": "American Journal of Physics",
+        "volume": "54",
+        "number": "2",
+        "pages": "112-121",
+        "month": "February",
+        "year": 1986,
+        "url": "https://doi.org/10.1119/1.14703"
+    },
+    "data": {
+       "total_time": {
+            "values": [347.84, 347.87, 347.86, 347.91, 347.91, 347.94, 347.84, 347.81, 347.84, 347.98],
+            "unit": "s",
+            "number_of_cycles": 100
+        },
+        "cord_length": {
+            "value": 3.0044,
+            "unit": "m",
+            "uncertainty": 0.0003
+        },
+        "ball_diameter": {
+            "value": 6.10,
+            "unit": "cm",
+            "uncertainty": 0.01
+        },
+        "ball_mass": {
+            "value": 856.7,
+            "unit": "g",
+            "uncertainty": 0.1
+        }
+    }
+}
+
+# Expose only 'data' publicly
+data = [_d00, _d01]
+
+# Limit module exports
+__all__ = ["data"]
