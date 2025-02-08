@@ -32,6 +32,10 @@
         "cord_length": {
             "value": 1,
             "unit": "m"
+        },
+        "bob": {
+            "shape": "spherical",
+            "note": "(Fig. 1.)"
         }
     }
 }
@@ -76,6 +80,10 @@ _d01 =
             "value": 856.7,
             "unit": "g",
             "uncertainty": 0.1
+        },
+        "bob": {
+            "shape": "spherical",
+            "note": "The pendulum ball"
         }
     }
 }
@@ -118,6 +126,10 @@ _d02 =
             "value": 10,
             "unit": "degree",
             "note": "max value"
+        },
+        "bob": {
+            "shape": "spherical",
+            "note": "the pendulum ball"
         }
     }
 }
@@ -154,6 +166,10 @@ _d03 =
             "value": 10,
             "unit": "degree",
             "note": "max value"
+        },
+        "bob": {
+            "shape": "spherical",
+            "note": "bob made of concrete-filled spherical plastic"
         }
     }
 }
@@ -186,6 +202,10 @@ _d04 =
             "value": 3.0,
             "unit": "cm",
             "note": "about twice bob diameter"
+        },
+        "bob": {
+            "shape": "spherical",
+            "note": "(Figure 1)"
         }
     }
 }
@@ -206,9 +226,6 @@ _d05 =
         "url": "http://doi.org/10.1088/1757-899X/335/1/012064"
     },
     "data": {
-        "bob": {
-            "shape": "spherical"
-        },
         "cord_length": {
             "values": [30, 25, 20, 15, 10],
             "unit": "cm"
@@ -227,6 +244,10 @@ _d05 =
             "values": [10.90, 10.15, 9.021, 7.762, 6.301],
             "unit": "s",
             "number_of_cycles": 10
+        },
+        "bob": {
+            "shape": "spherical",
+            "note": "the swing ball"
         }
     }
 }
