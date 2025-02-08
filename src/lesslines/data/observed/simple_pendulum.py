@@ -190,8 +190,49 @@ _d04 =
     }
 }
 
+_d05 =
+{
+    "source": {
+        "authors": [
+            "Yulkifli", "Zurian Afandi", "Yohandri"
+        ],
+        "title": "Development of Gravity Acceleration Measurement Using Simple Harmonic Motion Pendulum Method Based on Digital Technology and Photogate Sensor",
+        "journal": "IOP Conference Series: Materials Science and Engineering",
+        "volume": "335",
+        "number": "1",
+        "pages": "012064",
+        "month": "Apr",
+        "year": 2018,
+        "url": "http://doi.org/10.1088/1757-899X/335/1/012064"
+    },
+    "data": {
+        "bob": {
+            "shape": "spherical"
+        },
+        "cord_length": {
+            "values": [30, 25, 20, 15, 10],
+            "unit": "cm"
+        },
+        "total_time_manual": {
+            "values": [11.01, 10.06, 9.059, 7.812, 6.280],
+            "unit": "s",
+            "number_of_cycles": 10
+        },
+        "total_time_counter": {
+            "values": [10.92, 10.13, 9.150, 7.752, 6.310],
+            "unit": "s",
+            "number_of_cycles": 10
+        },
+        "total_time_oscilloscope": {
+            "values": [10.90, 10.15, 9.021, 7.762, 6.301],
+            "unit": "s",
+            "number_of_cycles": 10
+        }
+    }
+}
+
 # Expose only 'data' publicly
-data = [_d00, _d01, _d02, _d03, _d04]
+data = [_d00, _d01, _d02, _d03, _d04, _d05]
 
 # Limit module exports
 __all__ = ["data"]
