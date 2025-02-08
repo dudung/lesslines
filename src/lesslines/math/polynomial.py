@@ -26,7 +26,9 @@ class Polynomial:
         s = ' + '.join(terms)
         s = s.replace('x^0', '')
         s = s.replace('x^1 ', 'x ')
+        s = s.replace('x^1', 'x')
         s = s.replace(' 1x', ' x')
+        s = s.replace(' 1.0x', ' x')
         s = s.replace('-1x', '-x')
         s = s.replace(' + -', ' - ')
         return s
