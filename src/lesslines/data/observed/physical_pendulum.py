@@ -1,6 +1,5 @@
 # Private objects (not accessible on import)
-_d00 =
-{
+_d00 = {
     "source": {
         "authors": [
             "Nani Yuningsih", "Sardjito Sardjito", "Yunita Citra Dewi"
@@ -48,8 +47,7 @@ _d00 =
     }
 }
 
-_d01 =
-{
+_d01 = {
     "source": {
         "authors": [
             "Mustafa Coramik", "Buket İnanç"
@@ -96,8 +94,7 @@ _d01 =
     }
 }
 
-_d02 =
-{
+_d02 = {
     "source": {
         "authors": [
             "Sardjito", "Nani Yuningsih"
@@ -123,8 +120,7 @@ _d02 =
     }
 }
 
-_d03 =
-{
+_d03 = {
     "source": {
         "authors": [
             "T. H. Richardson", "S. A. Brittle"
@@ -151,8 +147,7 @@ _d03 =
     }
 }
 
-_d04 =
-{
+_d04 = {
    "source": {
         "authors": [
             "Mária Kladivová", "L'ubomír Mucha"
