@@ -44,7 +44,7 @@ print(e)
 
 
 ### Example: Numerical Differentiation and Integration with Polynomial
-lesslines simplifies operations like integration for polynomial function:
+lesslines simplifies operations like diffentiantion and integration for polynomial function:
 
 ```python
 from lesslines.math.polynomial import Polynomial
