@@ -95,4 +95,6 @@ class Linear:
                 elif xi == self.xx[j+1] and i == len(x) - 1:
                     yi = self.a[j] + self.b[j] * xi
                     y.append(yi)
+            if len(y) > len(x):
+                y.pop()
         return y
