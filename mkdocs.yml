@@ -38,7 +38,19 @@ plugins:
   - mkdocstrings:
       handlers:
         python:
-          selection:
-            docstring_style: google
+#          selection:
+#            docstring_style: google
           options:
             show_source: true
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true  # Enables KaTeX-style math rendering
+
+extra_css:
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/katex.min.css
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/katex.min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/contrib/auto-render.min.js
+  - js/katex_init.js  # Your local script
